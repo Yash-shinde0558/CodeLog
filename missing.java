@@ -12,6 +12,7 @@ public class missing {
     public static void main(String []args) {
         int arr[] = {1, 2, 3, 5};
 
-        missing(arr);
+        int result =  missing(arr);
+        System.out.println(result);
     }
 }
