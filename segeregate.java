@@ -7,6 +7,7 @@ public class segeregate {
         int j = n-1;
 
         while(i<j){
+            
 
             if(arr[i] == 0) i++;
             else if (arr[j] == 1) j--;
@@ -21,7 +22,7 @@ public class segeregate {
 
     public static void main(String[]args) {
 
-        int[] arr = {0, 1, 1, 0, 0, 1, 0};
+        int[] arr = {1, 0, 1, 0, 1, 1, 1, 0, 0};
         
         check(arr);
 
