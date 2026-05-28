@@ -1,4 +1,16 @@
 
+// public static class Student{
+//        String name;
+//        int rollNo;
+//        double cgpa;    
+//        //Method inside a class
+//        void print() {
+//         System.out.println(name+ " " + rollNo + " " + cgpa);    
+//        }
+//     }
+       //We written outside public class when we want to pass class in another file 
+
+
 
 public class oop {
 
