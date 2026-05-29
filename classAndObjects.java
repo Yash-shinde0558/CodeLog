@@ -12,7 +12,7 @@
 
 
 
-public class oop {
+public class classAndObjects {
 
     public static class Student{
        String name;

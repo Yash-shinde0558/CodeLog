@@ -1,32 +1,53 @@
 
 
+
+
+// Deposit money
+// Withdraw money
+// Check their balance
+
 public class passingClassToMethods {
+    
+    public static class BankAccount{
 
-    public static class Car{
-        int seats;
-        String name;
-        double length;
-        String type;
-        int torque;
+    //Data Members
+    String Accountholder;
+    int Accountnumber;
+    double Balance;
 
-    }
-    public static void main(String[] args){
-
-        // Student s1 = new Student(); 
-        
-        Car c = new Car();
-        c.length = 3.99;
-        c.name = "Kia Seltos";
-        c.seats = 5 ;
-        c.type = "SUV";
-        c.torque = 178;
-
-        change(c);
-        System.out.println(c.seats);
-
+    //Deposit Money
+    void deposit(double amount) {
+        Balance = Balance + amount;
+        System.out.println(amount + "deposited");
     }
 
-        public static void change(Car c) {
-            c.seats = 4;
+    //Withdraw Money
+    void withdraw(double amount){
+        if(amount<=Balance){
+            Balance = Balance - amount;
+            System.out.println(amount + "Withdraw");
+        }else{
+            System.out.println("Insufficient Balance");
         }
+    }
+
+    //Display Balance
+
+    void displayBalance(){
+        System.out.println("Account Holder: " + Accountholder);
+        System.out.println("Current Balance: " + Balance);
+    }
+}
+    public static void main(String[]args) {
+
+        BankAccount  a1 = new BankAccount();
+
+        a1.Accountholder = "Yash Shinde";
+        a1.Accountnumber = 123456789;
+        a1.Balance = 10000;
+
+        a1.deposit(1000);
+        a1.withdraw(2000);
+        a1.displayBalance();
+    }
 }
