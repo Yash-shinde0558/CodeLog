@@ -31,7 +31,7 @@ public class passingClassToMethods {
         }
     }
 
-    //Display Balance
+    //Display Account Balance 
 
     void displayBalance(){
         System.out.println("Account Holder: " + Accountholder);
