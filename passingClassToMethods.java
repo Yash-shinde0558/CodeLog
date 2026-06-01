@@ -61,6 +61,5 @@ public class passingClassToMethods {
         c2.carDetails();
 
 
-
     }
 }

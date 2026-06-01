@@ -20,5 +20,15 @@ public class ArrayListBasic {
         }
 
         
+        //add element inside an array 
+        // 25 21 18 50 10
+        arr.add(78);
+        arr.add(1,1000);
+        System.out.println(arr);
+
+        // TO remove last element form an array 
+        arr.remove(arr.size()-1);
+        System.out.println(arr);
+
     }
 }
