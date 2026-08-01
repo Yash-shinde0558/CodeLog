@@ -1,4 +1,6 @@
 
+
+//Example of polymorphism 
 public class PolyMorphism{
 
     public static class Calculator{
