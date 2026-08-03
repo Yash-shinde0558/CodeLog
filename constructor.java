@@ -12,12 +12,12 @@ public class constructor{
         }
 
 
-        //Non Parametarised constructor
+        // Non Parametarised constructor
         // Student() {
         //     System.out.println("Constructor call");
         // }
 
-        //parameterised constructor 
+        // parameterised constructor 
         // Student(String name, int age ){
         //     this.name = name;
         //     this.age = age; 
@@ -44,6 +44,8 @@ public class constructor{
 
         Student s2 = new Student(s1);
         s2.printInfo();
+
+        //constructor
         
         
 
