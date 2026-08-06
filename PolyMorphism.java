@@ -13,8 +13,8 @@ public class PolyMorphism{
             System.out.println("Sum = "+(a+b) );
         }
 
-        void add(int a, int b, int c ) { 
-            System.out.println("Sum = "+(a+b+c));
+        void add(int a, int b, int c , int d) { 
+            System.out.println("Sum = "+(a+b+c+d));
         }
     }
 
@@ -22,6 +22,6 @@ public class PolyMorphism{
         Calculator c1 = new Calculator();
 
         c1.add(10,20);
-        c1.add(10,20,30); 
+        c1.add(10,20,30,10); 
     }
 }
