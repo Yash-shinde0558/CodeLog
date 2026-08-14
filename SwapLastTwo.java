@@ -11,9 +11,8 @@ public class SwapLastTwo {
         arr[left] = arr[right];
         arr[right] = temp;
 
-        return arr;
+        return arr;  
         
-
     }
     public static void main(String[]args) {
 
