@@ -17,6 +17,8 @@ public class arrays {
             System.out.print(rohan[i]*2);
         }
 
+        //
+
     }
 
 }
