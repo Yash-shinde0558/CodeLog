@@ -1,5 +1,5 @@
 public class REVERSEarr {
-
+    //Reverse array using two pointer 
     public static void reverse(int arr[]){
         int i=0;
         int j=arr.length-1;
