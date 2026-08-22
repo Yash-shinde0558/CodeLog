@@ -1,27 +1,52 @@
+import java.util.Scanner;
+
+
 public class reverseString {
+
     public static void main(String[]args) {
+        System.out.println();
 
-        char[] s = {'h','e','l','l','o'};
+        Scanner sc = new Scanner(System.in);
 
+        //Define array Size
+        int [] arr = new int[5];
+        
+        //Take input from user
+        System.out.print("Enter a element : ");
+        for(int i=0; i<arr.length; i++){
+            arr[i] = sc.nextInt();
+        }
+
+        System.out.println();
+
+        System.out.print("Normal Array : ");
+        for(int i=0; i<arr.length; i++){
+            System.out.print(arr[i]+ " ");
+        }
+
+        System.out.println();
+        
         int left = 0;
-        int right = s.length-1;
+        int right = arr.length-1;
 
-        while(left < right) {
+        while(left<right){
 
-            char temp = s[left];
+            int temp = arr[left];
+            arr[left] = arr[right];
+            arr[right] = temp;
 
-            s[left] = s[right];
-
-            s[right] = temp;
-
-            right--;
             left++;
-
+            right--;
         }
 
-         for (int i = 0; i < s.length; i++) {
-            System.out.print(s[i] + " ");
+        System.out.println();
+        System.out.print("Reverse Array : ");
+        for(int i=0; i<arr.length;i++){
+            System.out.print(arr[i] + " ");
 
         }
+        System.out.println();
+        System.out.println();
+        
     }
 }
