@@ -1,17 +1,19 @@
 public class linearSearch{
     public static void  main(String [] args){
 
-        int arr[] = {1,3,4 ,5 ,5, 7,8, 3};
-        int target = 8;
+        int arr[] = {1, 3, 4, 5, 5, 7, 8, 3};
+    int target = 1;
 
-        for(int i=0; i<arr.length; i++){
+    for (int i = 0; i < arr.length; i++) {
 
-            if(arr[i]==target){
-                System.out.println("Index : " + i);
-            }
-        }   
+        if (target == arr[i]) {
+            System.out.println("Element found at index: " + i);
+            return;
+        }
 
-        System.out.println("Not in array ");
+    }
+    
 
+    System.out.println("Element not in the array...");
     }
 }

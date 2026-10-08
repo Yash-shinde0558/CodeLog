@@ -4,49 +4,29 @@ import java.util.Scanner;
 public class reverseString {
 
     public static void main(String[]args) {
-        System.out.println();
+ 
+        int []  nums = {1, 2, 3, 4 ,5 };
 
-        Scanner sc = new Scanner(System.in);
-
-        //Define array Size
-        int [] arr = new int[5];
-        
-        //Take input from user
-        System.out.print("Enter a element : ");
-        for(int i=0; i<arr.length; i++){
-            arr[i] = sc.nextInt();
+        System.out.print("Normal elements : ");
+        for(int i=0; i<nums.length; i++){
+            System.out.print(nums[i] + " ");
         }
 
-        System.out.println();
-
-        System.out.print("Normal Array : ");
-        for(int i=0; i<arr.length; i++){
-            System.out.print(arr[i]+ " ");
-        }
-
-        System.out.println();
-        
         int left = 0;
-        int right = arr.length-1;
+        int right = nums.length-1;
 
-        while(left<right){
+        while (left <= right) {
 
-            int temp = arr[left];
-            arr[left] = arr[right];
-            arr[right] = temp;
-
+            int temp = nums[left];
+            nums[left] = nums[right];
+            nums[right] = temp;
             left++;
             right--;
         }
-
         System.out.println();
-        System.out.print("Reverse Array : ");
-        for(int i=0; i<arr.length;i++){
-            System.out.print(arr[i] + " ");
-
+        System.out.print("Reverses elements : ");
+        for(int i=0; i<nums.length; i++){
+            System.out.print(nums[i] + " ");
         }
-        System.out.println();
-        System.out.println();
-        
     }
 }
